@@ -1,6 +1,5 @@
 import streamlit as st
 
-st.title("🎈 My new app")
-st.write(
-    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
-)
+st.title("Temperature Converter")
+temp_input = st.number_input("Enter temperature value:")
+conv_type = st.selectbox("Select conversion type:", ("Celsius to Fahrenheit","Fahrenheit to Celsius"))
